@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acceleration Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.3.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css"> 
+    
+    <script type="text/javascript" charset="utf-8" src="accelerometer/fun.js"></script>   
+    <script type="text/javascript" charset="utf-8" src="compass/fun.js"></script>
+    <script type="text/javascript" charset="utf-8" src="geolocation/fun.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        
+
+        $(function() {
+            var screenHeight = $(".ui-page").height();
+            var menuHeight = screenHeight * 0.15;
+            $(".menu").css('height', menuHeight);
+            $(".top").css('height', menuHeight);
+        });
+        
+        
+    </script>
+
+</head>
+<body>
+
+<div class="top">
+    
+</div>
+
+<div class="menu darkBlue">
+    <span>Accelerometer</span>
+    <a href="accelerometer/fun.html" data-transition="slide" data-role="none"></a>
+</div>
+
+<div class="menu sunflower">
+    <span>Compass</span>
+    <a href="compass/fun.html" data-transition="slide" data-role="none"></a>
+</div>
+
+<div class="menu lightGreen">
+    <span>Geolocation</span>
+    <a href="geolocation/fun.html" data-transition="slide" data-role="none"></a>
+</div>
+
+<div class="menu darkBlue">
+    <span>Camera</span>
+    <a href="camera.html" data-transition="slide" data-role="none"></a>    
+</div>
+
+<div class="menu sunflower">
+    <span>Notifications</span>
+    <a href="notifications.html" data-transition="slide" data-role="none"></a>
+</div>
+
+</body>
+</html>
