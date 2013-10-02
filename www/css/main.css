@@ -99,3 +99,7 @@ html, body {
 .dark {
     background-color: #34495e;
 }
+
+#map_canvas img {
+max-width: none;
+}

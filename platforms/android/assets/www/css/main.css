@@ -57,7 +57,6 @@ html, body {
     color: white;
     text-decoration: none;
     text-shadow: none;
-    padding-top: 10px;
 }
 
 .dataButton a {
@@ -69,6 +68,7 @@ html, body {
 }
 
 .dataButton span {
+    margin-top: 10px;
     color: white;
     text-decoration: none;
     text-shadow: none;
@@ -98,4 +98,8 @@ html, body {
 
 .dark {
     background-color: #34495e;
+}
+
+#map_canvas img {
+max-width: none;
 }

@@ -59,7 +59,9 @@
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.camera \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.device-motion \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.device-orientation \
+/Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.geolocation \
+/Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.vibration \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.camera/www \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/Camera.js \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.camera/www/CameraConstants.js \
@@ -72,11 +74,17 @@
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.device-orientation/www/compass.js \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.device-orientation/www/CompassError.js \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.device-orientation/www/CompassHeading.js \
+/Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www \
+/Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android \
+/Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/notification.js \
+/Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.dialogs/www/android/notification.js \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www/Coordinates.js \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www/geolocation.js \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www/Position.js \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.geolocation/www/PositionError.js \
+/Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.vibration/www \
+/Users/Rob/Mobile/lighthouse/platforms/android/assets/www/plugins/org.apache.cordova.vibration/www/vibration.js \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/res/icon \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/res/screen \
 /Users/Rob/Mobile/lighthouse/platforms/android/assets/www/res/icon/android \

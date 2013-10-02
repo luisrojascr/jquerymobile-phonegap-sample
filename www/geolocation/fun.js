@@ -1,11 +1,9 @@
 
  
         var onGeoSuccess = function(position) {
-
             var myLat = position.coords.latitude;
             var myLong = position.coords.longitude;
 
-            //MAP
             var mapOptions = {
                 center: new google.maps.LatLng(myLat, myLong),
                 zoom: 13,
@@ -18,7 +16,7 @@
                 position: new google.maps.LatLng(myLat, myLong),
                 map: map,
                 title: 'H'
-            });
+           });
         }
 
         function onGeoError(error) {
@@ -27,8 +25,8 @@
         }
         
         $(document).on('pageshow', '#geolocation' ,function(){
-            var screenHeight = $(".ui-page").height();
+            var screenHeight = $(".ui-page").height() - 60;
             $("#map_canvas").css('height', screenHeight);
-            navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError,{'enableHighAccuracy':true,'timeout':10000});
+            navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
         });   
         

@@ -27,7 +27,7 @@
         }
 
         function onSuccess(acceleration) {
-            var element = document.getElementById('accelerometer');
+            var element = document.getElementById('accelerometerBasic');
             element.innerHTML = 'Acceleration X: ' + acceleration.x         + '<br />' +
                     'Acceleration Y: ' + acceleration.y         + '<br />' +
                     'Acceleration Z: ' + acceleration.z         + '<br />' +
@@ -44,10 +44,10 @@
         });   
         </script>
         
-        <div id="accelerometer">Waiting for accelerometer...</div>
+        <div id="accelerometerBasic">Waiting for accelerometer...</div>
         <div class="dataButton alizarin">
                 <span>Back</span>
-                <a href="../index.html" data-transition="flip" data-role="none"></a>
+                <a href="../index.html" data-ajax="false" data-transition="flip" data-role="none"></a>
         </div>
     </div>
 </body>
