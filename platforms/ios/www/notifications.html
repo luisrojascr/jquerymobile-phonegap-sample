@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notification Example</title>    
+</head>
+<body>
+    <div data-role="page" id="notify">
+    <script type="text/javascript" charset="utf-8">
+
+        function showAlert() {
+            navigator.notification.alert(
+                    'You are the winner!',  // message
+                    'Game Over',            // title
+                    'Done'                  // buttonName
+            );
+        }
+
+        function playBeep() {
+            navigator.notification.beep(3);
+        }
+
+        function vibrate() {
+            navigator.notification.vibrate(2000);
+        }
+        
+        $(document).on('pageshow', '#notify' ,function(){
+            var screenHeight = $(".ui-page").height();
+            var menuHeight = screenHeight * 0.3;
+            $(".alert").css('height', menuHeight);
+        });   
+    </script>
+       
+<div class="alert menu darkBlue">
+    <span>Show Alert</span>
+    <a href="#" data-role="none" onclick="showAlert(); return false;"></a>
+</div>
+
+<div class="alert menu sunflower">
+    <span>Play Beep</span>
+    <a href="#" data-role="none" onclick="playBeep(); return false;"></a>
+</div>
+
+<div class="alert menu lightGreen">
+    <span>Vibrate</span>
+    <a href="#" data-role="none" onclick="vibrate(); return false;"></a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compass Example</title>
+    
+</head>
+<body>
+    
+    <div data-role="page" id="compassBasic">
+        
+        <script type="text/javascript" charset="utf-8">
+        var watchID = null;
+
+        function startWatch() {
+            var options = { frequency: 100 };
+
+            watchID = navigator.compass.watchHeading(onSuccess, onError, options);
+        }
+
+        function stopWatch() {
+            if (watchID) {
+                navigator.compass.clearWatch(watchID);
+                watchID = null;
+            }
+        }
+
+        function onSuccess(heading) {
+            var element = document.getElementById('heading');
+            element.innerHTML = 'Heading: ' + heading.magneticHeading;
+        }
+
+        function onError(compassError) {
+            alert('Compass error: ' + compassError.code);
+        }
+        
+        $(document).on('pageshow', '#compassBasic' ,function(){
+            stopWatch();
+            startWatch();
+        });    
+        </script>
+<div id="heading">Waiting for heading...</div>
+<div class="dataButton alizarin">
+    <span>Back</span>
+    <a href="../index.html" data-ajax="false" data-transition="flip" data-role="none"></a>
+</div>
+</div>
+</body>
+</html>

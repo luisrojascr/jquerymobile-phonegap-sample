@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acceleration Example</title>   
+</head>
+<body>
+    <div data-role="page" id="accelBasic">
+        
+        <script type="text/javascript" charset="utf-8">
+        var watchID = null;
+
+        function onDeviceReady() {
+            startWatch();
+        }
+
+        function startWatch() {
+            var options = { frequency: 100 };
+
+            watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+        }
+
+        function stopWatch() {
+            if (watchID) {
+                navigator.accelerometer.clearWatch(watchID);
+                watchID = null;
+            }
+        }
+
+        function onSuccess(acceleration) {
+            var element = document.getElementById('accelerometerBasic');
+            element.innerHTML = 'Acceleration X: ' + acceleration.x         + '<br />' +
+                    'Acceleration Y: ' + acceleration.y         + '<br />' +
+                    'Acceleration Z: ' + acceleration.z         + '<br />' +
+                    'Timestamp: '      + acceleration.timestamp + '<br />';
+        }
+
+        function onError() {
+            alert('onError!');
+        }
+        
+        $(document).on('pageshow', '#accelBasic' ,function(){
+            stopWatch();
+            startWatch();
+        });   
+        </script>
+        
+        <div id="accelerometerBasic">Waiting for accelerometer...</div>
+        <div class="dataButton alizarin">
+                <span>Back</span>
+                <a href="../index.html" data-ajax="false" data-transition="flip" data-role="none"></a>
+        </div>
+    </div>
+</body>
+</html>
